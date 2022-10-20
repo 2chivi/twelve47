@@ -1,0 +1,10 @@
+body {
+  background-color: #060708;
+  margin: 0px;
+  height: 100%;
+}
+@media (max-width: 1200px) {
+  .div-services {
+    margin-top: 40px;
+  }
+}

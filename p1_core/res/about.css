@@ -1,0 +1,248 @@
+.div-fbox {
+  width: 100%;
+  position: relative;
+  background-color: #1f2022;
+  border-radius: 3px;
+  padding: 25px;
+  line-height: 17px;
+}
+.div-fbox .block:nth-child(1) {
+  color: red;
+}
+.f-center {
+  position: relative;
+  display: grid;
+  justify-content: stretch;
+  gap: 50px;
+  grid-template-columns: 2fr 1fr;
+  margin-left: 90px;
+  margin-right: 110px;
+  margin-top: 130px;
+}
+.f-center .fas,
+.f-center .fab {
+  color: #c2a6eb;
+  font-size: 28px;
+}
+.f-center .title {
+  position: absolute;
+  top: -30px;
+  color: white;
+  left: 10px;
+  font-size: 26px;
+  font-weight: 600;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+.f-center .para {
+  color: rgba(255, 255, 255, 0.753);
+  font-size: 15px;
+  line-height: 19px;
+  margin: 8px;
+  margin-left: 14px;
+  margin-right: 14px;
+}
+.f-center .title2 {
+  color: #ddd6ec;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  gap: 10px;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  line-height: 22px;
+  margin-bottom: 10px;
+}
+.f-center .title2:not(:first-child) {
+  margin-top: 30px;
+}
+.f-center .div-me {
+  margin-left: -40px;
+  margin-top: -60px;
+  display: grid;
+  justify-content: center;
+  align-content: end;
+  z-index: 7;
+  border: 2px solid #060708;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  overflow: hidden;
+  width: 110px;
+  height: 130px;
+}
+.f-center .div-me .div-circle {
+  background-color: #cac3d9;
+  margin-top: -30px;
+  width: 110px;
+  height: 110px;
+  border-radius: 20px;
+  border: 2px solid #303242;
+}
+.f-center .div-me .div-circle img {
+  margin-top: -20px;
+  margin-left: -15px;
+  width: 130px;
+}
+.f-pages {
+  z-index: 8;
+  padding-right: 130px;
+  position: fixed;
+  display: grid;
+  width: 100vw;
+  justify-content: end;
+  align-content: center;
+  box-shadow: 0 0 2px 2px #120a1e;
+  background-color: black;
+  height: 70px;
+  grid-auto-flow: column;
+  gap: 20px;
+  top: 0px;
+  font-size: 18px;
+  font-family: 'Norwester', sans-serif;
+}
+.f-pages div {
+  color: rgba(255, 255, 255, 0.719);
+  cursor: pointer;
+}
+.f-pages div:hover {
+  color: white;
+}
+.f-company-title {
+  z-index: 10;
+  font-size: 28px;
+  font-family: 'Norwester', sans-serif;
+  position: fixed;
+  left: 90px;
+  top: 30px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.f-colors {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 10;
+  width: 98vw;
+  height: 50px;
+  bottom: 0px;
+  grid-auto-flow: column;
+  gap: 3px;
+}
+.f-colors div {
+  opacity: 0.7;
+  cursor: pointer;
+  border-radius: 3px;
+  width: 25px;
+  height: 25px;
+  border: 1px solid black;
+  box-shadow: 0 0 2px 1px #000000;
+}
+.f-colors div:hover {
+  width: 28px;
+  height: 28px;
+  opacity: 1;
+}
+.f-lefter {
+  width: 8px;
+  position: fixed;
+  border-bottom-right-radius: 26px;
+  z-index: 10;
+}
+.f-lefter.div-test1 {
+  left: 0;
+  top: 0;
+  height: 100vh;
+  background-color: #120c1a;
+}
+.f-lefter.div-test2 {
+  left: 8px;
+  top: 0;
+  height: 57%;
+  background-color: #2b2238;
+}
+.f-lefter.div-test3 {
+  left: 16px;
+  top: 0;
+  height: 28%;
+  background-color: #86789b;
+}
+.f-lefter.div-test4 {
+  left: 24px;
+  top: 0;
+  height: 14%;
+  background-color: #d5cee5;
+}
+@media (max-width: 1200px) {
+  .f-pages {
+    padding-right: 40px;
+  }
+  .f-lefter {
+    width: 4px;
+  }
+  .f-lefter.div-test1 {
+    left: 0;
+  }
+  .f-lefter.div-test2 {
+    left: 4px;
+  }
+  .f-lefter.div-test3 {
+    left: 8px;
+  }
+  .f-lefter.div-test4 {
+    left: 12px;
+  }
+  .f-company-title {
+    left: 30px !important;
+  }
+  /* CSS that should be displayed if width is equal to or less than 800px goes here */
+  .f-center {
+    grid-template-columns: auto !important;
+    gap: 30px !important;
+    margin-left: 25px;
+    margin-right: 15px;
+  }
+  .f-center .title {
+    font-size: 20px !important;
+  }
+  .f-center .title2:not(:first-child) {
+    margin-top: 20px;
+  }
+  .f-center .div-top {
+    grid-template-columns: 65px auto !important;
+  }
+  .f-center .div-box {
+    padding: 10px;
+  }
+  .f-center .div-box:not(:first-child) {
+    margin-top: 35px;
+  }
+  .f-center .div-box:first-child .title {
+    margin-left: 65px !important;
+  }
+  .f-center .div-me {
+    width: 80px !important;
+    height: 100px !important;
+    margin-left: -15px !important;
+    margin-top: -59px !important;
+  }
+  .f-center .div-me .div-circle {
+    width: 80px !important;
+    height: 80px !important;
+  }
+  .f-center .div-me .div-circle img {
+    width: 100px !important;
+  }
+}
+body {
+  background-color: #060708;
+  margin: 0px;
+  height: 100%;
+}
+@media (max-width: 1200px) {
+  .div-services {
+    margin-top: 40px;
+  }
+}

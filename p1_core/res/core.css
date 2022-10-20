@@ -1,0 +1,76 @@
+
+* {
+    box-sizing: border-box;
+}
+
+hr{
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+.ib{
+    display:inline-block;
+}
+
+.ibt{
+   display:inline-block;
+   vertical-align:top;
+}
+
+.btn {
+  cursor: pointer;
+  /* display: inline-block; */
+  white-space: nowrap;
+  color: #fffdfa;
+  font-weight: 600;
+  background-color: #656869;
+  padding: 4px;
+  border-radius: 2px;
+  text-align: center;
+}
+.btn .fa,
+.btn .fab {
+  font-weight: 500;
+}
+.btn:hover {
+  background-color: #9aa1a3 !important;
+}
+
+.flex {
+  display: flex;
+}
+.hide {
+  display: none;
+}
+body {
+  font-family: 'Open Sans';
+  font-size: 13px;
+  line-height: 13px;
+  color: #fffdfa
+}
+
+.no-select {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+}
+div[contenteditable] {
+  padding: 2px 4px;
+  border-radius: 2px;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+input:not([type='checkbox']) {
+  padding: 2px;
+  border-radius: 2px;
+  border: none;
+}

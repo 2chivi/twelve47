@@ -1,0 +1,34 @@
+.div-position {
+  width: 112px;
+  height: 63px;
+  background-color: #d5ffd9;
+  position: relative;
+  background-image: url("https://twelve47.s3.us-east-2.amazonaws.com/twelve47/grid.png");
+  outline: 2px solid black;
+  background-size: 100px;
+  user-select: none;
+  justify-self: center;
+  align-self: center;
+}
+.div-position.grabbed {
+  cursor: move;
+}
+.div-position .div-borders {
+  user-select: none;
+  position: absolute;
+  background-color: #c59a9a;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  box-shadow: 0 0 5px 3px #0f0000;
+  outline: 1px solid rgba(0, 0, 0, 0.336);
+}
+.div-position .div-borders:hover {
+  cursor: move;
+}
+.div-position .div-borders .div-origin {
+  user-select: none;
+  width: 4px;
+  height: 4px;
+  background-color: #680707;
+}

@@ -1,0 +1,23 @@
+/* v1.0 */
+body {
+  display: grid;
+  background-color: #282a30;
+}
+.div-modal {
+  position: absolute;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 2px;
+  background-color: rgba(15, 31, 17, 0.623);
+  top: 100px;
+  justify-self: center;
+  min-width: 300px;
+  display: grid;
+}
+.div-box {
+  padding: 5px;
+  color: #e2e2e2;
+  background-color: rgba(33, 46, 70, 0.575);
+  border-radius: 2px;
+  box-shadow: 0 0 2px 1px #000000;
+}

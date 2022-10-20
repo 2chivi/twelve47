@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126092396-2"></script>
+    <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'UA-126092396-2'); </script>
+
+    <script src="https://twelve47.s3.us-east-2.amazonaws.com/core/socket.io.slim.js"></script>
+    <script src="https://twelve47.s3.us-east-2.amazonaws.com/core/jquery-3.2.1.min.js"></script>
+    <script src="landing.js"></script>
+
+    <link rel="icon" href="title.png">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400,600,700" />
+    <link rel="stylesheet" href="core.css">
+    <link rel="stylesheet" href="landing.css">
+
+    <script src="https://twelve47.s3.us-east-2.amazonaws.com/game/tinycolor.min.js"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <link href="https://fonts.cdnfonts.com/css/norwester" rel="stylesheet">
+
+    <title>Twelve47: Twitch Overlays & Games for Streamers</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Interactive Twitch Overlays, Games, and Tools for streamers. Emote Combos, Chat Cloud, Hype Train, and much more.">
+    <meta name="keywords" content="twelve47, 47, chance, wheel, chance wheel, emote, emote cosmos, cosmos, scoreboard, train, hype train, stream overlay, emote combo, chat cloud, twitch overlay, twitch, twitch games, emote overlay, chat overlay">
+    <meta name="author" content="Twelve47">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <!-- Landing Page HTML==================================  -->
+    <div class="f-pages">
+        <div  onClick="window.open('https://twelve47.com/about','_self');">About</div>
+        <div style="color:white;" onClick="window.open('https://twelve47.com','_self');">Twitch Apps</div>
+    </div>
+
+    <div class="f-company-title" onClick="window.open('https://twelve47.com','_self');">
+        Twelve47
+    </div>
+
+    <div class="f-lefter div-test4"></div>
+    <div class="f-lefter div-test3"></div>
+    <div class="f-lefter div-test2"></div>
+    <div class="f-lefter div-test1"></div>
+
+
+    <div class="f-center">
+        <div class="div-fbox">
+            <div class="title">Twitch Overlays & Games</div>
+    
+            <div class='div-hello'>
+                <div onClick='window.open("https://ko-fi.com/twelve47", "_blank")' class='div-promo
+                                    div-coffee'><i class='fa fa-coffee'></i> Buy Me a Coffee</div>
+                <!--<div onclick='window.open("https://patreon.com/skivvy", "_blank")' class='div-promo div-patreon'><i
+                        class='fab fa-patreon'></i> Patreon</div>-->
+                <div onclick='window.open("https://twitter.com/twelve47studios", "_blank")' class='div-promo div-twitter'><i
+                        class='fab fa-twitter'></i> Twitter Updates</div>
+            </div>
+            <div class="para">
+                I'm making interactive overlays & games for streamers. Just login, turn on an App, and paste a link into OBS.
+            </div>
+    
+            <span style='font-weight:600; font-size:15px;'>Contact: Twelve47Kevin@gmail.com - Skivvy#7602</span>
+    
+    
+    
+            <div class="div-products" style="margin-top:20px;">
+
+                <div class='div-prod'>
+                    <img class='img-cosmos' img_png alt='Emote Cosmos' />
+                    <div class='div-desc'>
+                        <div class="title2"> Emote Cosmos (Coming Soon) </div>
+                        <div class="para">
+                            Emote Cosmos is a Mini Game Royale. Just post a link in chat, and up to
+                            100 chatters can play together in a private game just for your stream. Great for downtime
+                            between
+                            stream-content. More details to come!
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <div class='div-prod'>
+                    <img class='img-train' vid alt='Hype Train' />
+                    <div class='div-desc'>
+                        <div class="title2"> Hype Train </div>
+                        <div class="para">
+                            Hype Train appears on screen in sync with Twitch's Hype Train. Donations grow the train and
+                            adds the donaters as passengers. Donaters can change their emote by typing in chat. *New*
+                            (Ability to
+                            add custom train image assets.)
+                        </div>
+                    </div>
+                </div>
+    
+                <div class='div-prod'>
+                    <img class='img-combo' vid alt='Emote Combos' />
+                    <div class='div-desc'>
+                        <div class="title2">Emote Combos</div>
+                        <div class="para">
+                            If chat manages to post the same emote multiple time in a row the combo
+                            counter goes up! How high can your chat go? Adds an extra level of fun to
+                            the chat expierence and encourages chat activity.
+                        </div>
+                    </div>
+                </div>
+
+                <div class='div-prod'>
+                    <img class='img-cloud' vid alt='Chat Cloud' />
+                    <div class='div-desc'>
+                        <div class="title2">Chat Cloud</div>
+                        <div class="para">
+                            Dynamic word and emote cloud. Parts of the cloud grow and shrink according to trending
+                            words and emotes in the chat. By default, it takes atleast 2 appearances of the same word within
+                            30 seconds
+                            to
+                            trigger an effect. Emotes show up after 1 use.
+                            Allows for quick-voting. Total occurences of popular words are displayed on screen.
+                        </div>
+                    </div>
+                </div>
+    
+                <div class='div-prod'>
+                    <img class='img-score' img alt='scoreboard' />
+                    <div class='div-desc'>
+                        <div class="title2">Scoreboard</div>
+                        <div class="para">
+                            Scoreboard overlay that your Mods can update on the fly! Removes spam in chat
+                            from people constantly asking about the game count.
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+
+                    <div class='btn div-join' onclick='M.TwitchAuth(true);'>
+                        <div class='fab fa-twitch' style="margin-right:5px"></div>
+                        Login
+                    </div>
+    
+        </div>
+
+    </div>
+
+
+    <!--
+    <div class='div-prod'>
+        <img class='img-wheel' img_png alt='Chance Wheel (Coming Soon)' />
+        <div class='div-desc'>
+            <div style='margin-bottom:10px; font-size:17px; font-weight:600;'>Chance Wheel</div>
+            <div>
+                Chance Wheel overlay allows chatters to spin the wheel using subs, bits, or channel 
+                points.  Chance Wheel is entirely editable via chat commands.  VTube Studio integration.
+            </div>
+        </div>
+    </div>-->
+
+    <!--
+
+    <div class='div-intro div-box' style="margin-top:1200px">
+        <div class='div-title'>
+            <div class='div-12'>TWELVE</div>
+            <div class='div-47'>
+                <div class='div-back'>
+                    <div></div> <div></div> <div></div> <div></div>
+                </div>
+                <div class='div-num'>47</div>
+            </div>
+            <h1 class='div-title-right'>Interactive Twitch Overlays & Games</h1>
+        </div>
+
+        <div class='div-hello'>
+            <div onClick='window.open("https://ko-fi.com/twelve47", "_blank")' class='div-promo
+                div-coffee'><i class='fa fa-coffee'></i> Buy Me a Coffee</div>
+            <div onclick='window.open("https://patreon.com/skivvy", "_blank")' class='div-promo div-patreon'><i class='fab fa-patreon'></i> Patreon</div>
+            <div onclick='window.open("https://twitter.com/twelve47studios", "_blank")' class='div-promo div-twitter'><i class='fab fa-twitter'></i> Twitter Updates</div>
+            
+            <div class='div-intro-desc' style='margin-top:7px;'>
+                I'm making interactive overlays & games for streamers. No installation necessary, just login, turn on an App of your
+                choice using my dashboard, and paste a link into OBS. If you have any special requests or would have any questions,
+                please let me know.
+
+                <hr style='opacity:0; border-color:black;margin-top:8px;'/>
+                <span style='font-weight:600;'>Twelve47Kevin@gmail.com - Skivvy#7602 - Want to make an overlay?  Have Feedback?</span>
+            </div>
+        </div>
+
+        <div class='div-products'>
+
+            <div class='div-prod'>
+                <img class='img-cosmos' img_png alt='Emote Cosmos' />
+                <div class='div-desc'>
+                    <div style='margin-bottom:10px; font-size:17px; font-weight:600;'>Emote Cosmos (Coming Soon)</div>
+                    <div>
+                        Emote Cosmos is a Mini Game Royale. Just post a link in chat, and up to 
+                        100 chatters can play together in a private game just for your stream. Great for downtime between
+                        stream-content. More details to come!
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class='div-prod'>
+                <img class='img-train' vid alt='Hype Train' />
+                <div class='div-desc'>
+                    <div style='margin-bottom:10px; font-size:17px; font-weight:600;'>Hype Train</div>
+                    <div>
+                        Hype Train appears on screen in sync with Twitch's Hype Train.  Donations grow the train and 
+                        adds the donaters as passengers.  Donaters can change their emote by typing in chat. *New* (Ability to 
+                        add custom train image assets.)
+                    </div>
+                </div>
+            </div>
+
+            <div class='div-prod'>
+                <img class='img-combo' vid alt='Emote Combos' />
+                <div class='div-desc'>
+                    <div style='margin-bottom:10px; font-size:17px; font-weight:600;'>Emote Combos</div>
+                    <div>
+                        If chat manages to post the same emote multiple time in a row the combo
+                        counter goes up! How high can your chat go? Adds an extra level of fun to
+                        the chat expierence and encourages chat activity.
+                    </div>
+                </div>
+            </div>
+            
+            <div class='div-prod'>
+                <img class='img-cloud' vid alt='Chat Cloud' />
+                <div class='div-desc'>
+                    <div style='margin-bottom:10px; font-size:17px; font-weight:600;'>Chat Cloud</div>
+                    <div>
+                        Dynamic word and emote cloud. Parts of the cloud grow and shrink according to trending
+                        words and emotes in the chat. By default, it takes atleast 2 appearances of the same word within 30 seconds
+                        to
+                        trigger an effect. Emotes show up after 1 use.
+                        Allows for quick-voting. Total occurences of popular words are displayed on screen.
+                    </div>
+                </div>
+            </div>
+
+            <div class='div-prod'>
+                <img class='img-score' img alt='scoreboard' />
+                <div class='div-desc'>
+                    <div style='margin-bottom:10px; font-size:17px; font-weight:600;'>Scoreboard</div>
+                    <div>
+                        Scoreboard overlay that your Mods can update on the fly!  Removes spam in chat 
+                        from people constantly asking about the game count.
+                    </div>
+                </div>
+            </div>
+
+            <div class='div-prod'></div>
+
+
+        </div>
+
+        <div class='btn div-join' onclick='M.TwitchAuth(true);'>
+            <div class='fab fa-twitch' style="margin-right:5px"></div>
+            Login
+        </div>
+    </div>
+-->
+    
+
+    <!-- Alternative Page HTML==================================  -->
+
+    <div class='div-game-intro' style='display:none'>
+        <div class='div-title'>
+            <div class='div-12'>TWELVE</div>
+            <div class='div-47'>
+                <div class='div-back'> 
+                    <div></div> <div></div> <div></div> <div></div>
+                </div>
+                <div class='div-num'>47</div>
+            </div>
+            <h1 class='div-title-right'>Game Title Pending</h1>
+        </div>
+
+        <div class='div-info'>
+            <div class='div-game-info'></div>
+            <div class='div-players'></div>
+            <div class='div-queue'></div>
+            <div class='div-spot'></div>
+        </div>
+
+        <div class='btn div-join' style='display:none' onclick='M.TwitchAuth();'>
+            <div class='fab fa-twitch' style="margin-right:5px"></div>
+            Play
+        </div>
+    </div>
+
+    <div class="div-app-starting" style="display:none">
+        <div>
+            <img src="title.png" />
+            <div>Connected</div>
+        </div>
+    </div>
+
+    <div class='div-nothing' style='display:none'>
+        Inactive. Turn on an App at Twelve47Studios.com. Or Refresh.
+    </div>
+
+    <div class='div-webgl' style='display:none'>
+        <div style='margin-bottom:10px;'>
+            Hardware Acceleraton (WebGL) disabled. Please enable Hardware Acceleration
+            and try again.
+        </div>
+    </div>
+
+    <div class='div-obs' style='display:none'>
+        <div style='margin-bottom:10px;'>
+            Incorrect OBS resolution for Twelve47 App.
+        </div>
+
+        <li>Right Click Browser Source</li>
+        <li>Go to Properties</li>
+        <li>Width:1920</li>
+        <li>Height:1080</li>
+        <li>Position and Resize as needed in OBS display</li>
+    </div>
+
+    <div class='div-token' style='font-size: 11px; opacity:0.5; display:none' >
+        <div style='margin-bottom:10px;'>
+            If you are frequently getting this message, please email me at Twelve47Kevin@gmail.com
+            <br/>
+             Missing or Expired Twitch Login Token.
+        </div>
+        <li>Go to Twelve47.com</li>
+        <li>Press Login (will refresh token)</li>
+        <li>Reload this Browser-Source/Window, and try again</li>
+    </div>
+
+    <div class='div-frame-parent'></div>
+
+</body>
+
+</html>
